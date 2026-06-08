@@ -8,7 +8,11 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup() {
   Serial.begin(115200);
   dht.begin();
+
+  Serial.println("======================================");
   Serial.println("SpaceAgro Sentinel - ESP32 com DHT22");
+  Serial.println("Monitoramento ambiental para agricultura inteligente");
+  Serial.println("======================================");
 }
 
 void loop() {
@@ -16,11 +20,13 @@ void loop() {
   float umidade = dht.readHumidity();
 
   if (isnan(temperatura) || isnan(umidade)) {
-    Serial.println("Falha ao ler o sensor DHT22");
+    Serial.println("ERRO: Falha ao ler o sensor DHT22");
     delay(2000);
     return;
   }
 
+  Serial.println("Leitura do sensor:");
+  
   Serial.print("Temperatura: ");
   Serial.print(temperatura);
   Serial.println(" C");
@@ -30,11 +36,14 @@ void loop() {
   Serial.println(" %");
 
   if (temperatura > 32 || umidade < 40) {
-    Serial.println("ALERTA: risco climatico elevado");
+    Serial.println("Status: ALERTA");
+    Serial.println("Mensagem: Risco climatico elevado para a plantacao");
   } else {
-    Serial.println("Condicao ambiental estavel");
+    Serial.println("Status: ESTAVEL");
+    Serial.println("Mensagem: Condicao ambiental adequada");
   }
 
-  Serial.println("------------------------------");
+  Serial.println("--------------------------------------");
+
   delay(3000);
 }

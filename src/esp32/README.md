@@ -14,12 +14,7 @@ Coletar dados ambientais basicos que podem apoiar a classificacao de risco agric
 
 ## Como abrir no Wokwi
 
-1. Acesse https://wokwi.com/.
-2. Crie um novo projeto com ESP32.
-3. Adicione o sensor DHT22.
-4. Conecte o pino de dados do DHT22 ao GPIO 15.
-5. Copie o conteudo de `sketch.ino` para o editor.
-6. Execute a simulacao.
+Acesse https://wokwi.com/projects/466302589428580353.
 
 ## Interpretacao
 
