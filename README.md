@@ -25,7 +25,7 @@ Projeto individual
 ## Professores
 
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">-</a>
+-
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/company/inova-fusca">André Godoi</a>
 
