@@ -84,12 +84,13 @@ Recomendacao automatica ao usuario
 Global-Solution-1/
 ├── README.md
 ├── requirements.txt
+├── assets/
+│   └── logo-fiap.png
 ├── data/
 │   ├── dados_agricolas_espaciais.csv
 │   └── dados_sensor_esp32.csv
 ├── docs/
 │   ├── arquitetura.md
-│   ├── roteiro_video.md
 │   ├── relatorio_base.md
 │   └── imagens/
 └── src/
@@ -99,7 +100,11 @@ Global-Solution-1/
     ├── gerar_dados.py
     ├── utils.py
     └── esp32/
-        ├── sketch.ino
+        ├── src/
+        │   └── sketch.ino
+        ├── diagram.json
+        ├── plataformio.ini
+        ├── wokwi.toml
         └── README.md
 ```
 
@@ -146,21 +151,11 @@ streamlit run src/dashboard.py
 
 O dashboard exibe dados, metricas, graficos e um formulario lateral para prever o risco agricola com valores informados pelo usuario.
 
-## Como simular o ESP32
-
-1. Acesse https://wokwi.com/.
-2. Crie um projeto ESP32.
-3. Adicione um sensor DHT22.
-4. Conecte o pino de dados do sensor ao GPIO 15.
-5. Copie o codigo de `src/esp32/sketch.ino`.
-6. Execute a simulacao e acompanhe o Monitor Serial.
-
 ## Links e observacoes
 
-- GitHub: inserir link do repositorio.
+- [GitHub](https://github.com/EnzoCaetano015/SpaceAgro-Sentinel).
 - Video nao listado: inserir link do video.
-- Simulacao Wokwi: inserir link da simulacao.
-- Participacao no podio: roteiro contem a frase `QUERO CONCORRER`.
+- [Protótipo](https://wokwi.com/projects/466302589428580353)
 
 ## Historico de lancamentos
 
