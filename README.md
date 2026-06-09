@@ -24,13 +24,10 @@ Projeto individual
 
 ## Professores
 
-### Tutor(a)
-
-- A preencher
-
+### Tutor(a) 
+-
 ### Coordenador(a)
-
-- A preencher
+- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi</a>
 
 ## Descricao do projeto
 
